@@ -1,0 +1,113 @@
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+}
+h1 {
+  text-align: center;
+  color: white; 
+  margin-bottom: 20px;
+}
+#chat-container {
+  width: 500px;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+#messagesA {
+  height: 400px;
+  overflow-y: auto;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f8f9fa;
+}
+#messagesA div {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: #007bff;
+  max-width: 80%;
+  word-wrap: break-word;
+  margin-left: auto;
+}
+#messagesB {
+  height: 400px;
+  overflow-y: auto;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f8f9fa;
+}
+#messagesB div {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: #e9ecef;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+#input {
+  display: flex;
+  gap: 10px;
+}
+
+#input input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+#input input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+#input button {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+#input button:hover {
+  background-color: #0056b3;
+}
+/* Thanh cuộn tùy chỉnh */
+#messages::-webkit-scrollbar {
+  width: 6px;
+}
+#messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+#messages::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+#messages::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#container2 {
+  margin-left: 40px; /* Add space between containers */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add styles for the first container as well */
+#container {
+  display: flex;
+  flex-direction: column;
+}
